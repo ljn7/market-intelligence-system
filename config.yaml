@@ -1,0 +1,38 @@
+# global configuration
+target_count: 2500         # total tweets across hashtags (not per-tag)
+per_tag_target: 1500        # target per tag (if target_count not achievable)
+max_scrolls_per_tag: 200
+headless: false
+save_raw_html: false
+output_dir: "data/parquet"
+raw_dir: "data/raw"
+log_file: "logs/twitter_scraper.log"
+
+# hashtags to search (adjust/add)
+hashtags:
+  - "nifty50"
+  - "sensex"
+  - "banknifty"
+  - "intraday"
+  - "nse"
+  - "bse"
+  - "stockmarketindia"
+  - "indianstocks"
+
+# Nitter instances (rotate when blocked)
+nitter_instances:
+  # - "https://nitter.net"
+  # - "https://nitter.poast.org"
+  - "https://nitter.tiekoetter.com"
+  # - "https://nitter.privacyredirect.com"
+  # - "https://nuku.trabun.org"
+  # - "https://lightbrd.com"
+
+# scraping polite settings
+min_sleep: 2.5
+max_sleep: 6.5
+randomize_sleep: true
+
+# processor settings
+tfidf_max_features: 10000
+tfidf_ngram_range: [1,2]

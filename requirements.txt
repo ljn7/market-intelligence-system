@@ -1,0 +1,14 @@
+pandas
+pyarrow
+lxml
+beautifulsoup4
+tqdm
+requests
+undetected-chromedriver
+webdriver-manager
+selenium
+scikit-learn
+numpy
+pytest
+python-dotenv
+gunicorn
