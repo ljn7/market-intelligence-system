@@ -38,10 +38,6 @@ ENV/
 .ipynb_checkpoints
 
 # Output data
-output/
-*.parquet
-*.csv
-*.json
 
 # Logs
 logs/
@@ -53,7 +49,6 @@ geckodriver
 *.crdownload
 
 # Data files
-data/
 *.db
 *.sqlite
 
